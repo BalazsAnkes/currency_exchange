@@ -1,0 +1,9 @@
+{
+  "name": "currency-exchange",
+  "description": "currency-exchange",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "latest",
+    "grunt-contrib-jshint": "latest"
+  }
+}

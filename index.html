@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/rickshaw.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <title>Currency exchange</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Currency exchange</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <!-- <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul> -->
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a id="refreshButton" href="#">Refresh</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="alertContainer"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-1">
+                    <input type="text" id="currencyQuantityFrom" class="form-control" placeholder="0">
+                </div>
+                <div class="col-md-2">
+                    <select id="currenciesSelectFrom" class="form-control currenciesSelect"></select>
+                </div>
+                <div class="col-md-2 col-md-offset-2">
+                    <input type="text" id="currencyQuantityTo" class="form-control" placeholder="0" disabled>
+                </div>
+                <div class="col-md-2">
+                    <select id="currenciesSelectTo" class="form-control currenciesSelect"></select>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-2">
+                    <select id="currenciesSelectGraph" class="form-control currenciesSelect"></select>
+                </div>
+            </div>
+            <div class="row">
+                <div id="graphWrapper">
+                    <div id="graph"></div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/lib/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/lib/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/lib/d3.min.js"></script>
+        <script type="text/javascript" src="js/lib/d3.layout.min.js"></script>
+        <script type="text/javascript" src="js/lib/rickshaw.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
